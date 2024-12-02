@@ -1,9 +1,6 @@
 library(tidyverse)
 library(httr)
 
-# Get Data
-session_cookie <- "53616c7465645f5f65b141f6ee517e862066edbc51531079e69ef768c0b3bc67ab19f5e30b24c21cb8c4959891c909dd0ece883fffed61c82ecb29f176eda104"
-
 # Function to get puzzle input
 get_puzzle_input <- function(day, year = 2024) {
   url <- paste0("https://adventofcode.com/", year, "/day/", day, "/input")
